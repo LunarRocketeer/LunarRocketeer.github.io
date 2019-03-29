@@ -1,0 +1,159 @@
+body {
+    /* allows for edgeless elements and changes background to dark blue */
+    height: 100%;
+    margin: 0;
+    background-image: url("blue_background.png");
+    /**#F7B30B;*/
+    background-color: white; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px;
+    padding-top: 50px;
+    margin-bottom: 100px;
+  }
+
+header{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0;
+    height:300px;
+}
+
+#nametag{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20%;
+    /* grid-auto-columns: repeat(3, 1fr);
+    grid-auto-rows: repeat(3, 1fr); */
+    background-color: white;
+    /* radius top-left top-right bottom-right bottom-left*/
+    border-radius: 0 25px 25px 0;
+    font-size: 20px;
+    min-width: 550px;
+    max-width: 500px;
+    padding: 50px;
+}
+
+#hello{
+    margin: 0;
+    font-size: 1em;
+}
+
+#mid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#mid img{
+    margin-left: auto;
+}
+
+#name{
+    font-size: 3em;
+    color: #FFB000;
+}
+
+#year{
+    align-self: flex-end;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+#banners{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0 25px 0;
+}
+
+#banners p{
+    /* radius top-left top-right bottom-right bottom-left*/
+    border-radius: 0 15px 15px 0;
+    height: 25%;
+
+    font-size: 25px;
+    color: white;
+    margin: 0;
+    margin-top: 5px;
+    padding: 0px;
+    font-family: sans-serif;
+    vertical-align: middle;
+
+    padding: 10px;
+}
+
+header img{
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+
+
+h1{
+    /*changes title */
+    font-size: 100px;
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+h2{
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 55px;
+    color: rgb(38, 32, 22);   
+}
+/**
+p{
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    color: rgb(38, 32, 22);
+    text-align: center;
+}*/
+
+#clickS{
+    text-align: center;
+    background-color: rgba(127, 200, 239, 0.6);
+    padding: 15px 0 15px 0;
+    font-family: sans-serif;
+    color: #FFB000;
+    font-size: 25px;
+}
+
+#skills{
+    display: flex;
+    flex-direction: row;
+    padding-top: 0px;
+    size: 50%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*img transition from https://stackoverflow.com/questions/22994810/how-do-i-desaturate-and-saturate-an-image-using-css*/
+#skills img{
+    padding: 10px;
+    filter: none;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+#skills img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+}
+
