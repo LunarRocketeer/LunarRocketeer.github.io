@@ -3,16 +3,21 @@
     <head>
         <title>Cameron Miller - film info</title>
         <link rel="stylesheet" type="text/css" href="info_style.css"> 
+        <!--Allows for the loading of the navigation bar-->
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
     <body>
-        <div id="nav">
-            <a href="portfolio_home.html">Home</a>
-            <a href="film_info.html" id="current">Filmmaking & Video Editing</a>
-            <a href="design_info.html">Drawing & Design</a>
-            <a href="dev_info.html">Programming & Development</a>
-            <a href="geo_info.html">Geography, Planning, Data</a>
-            <a href="writing_info.html">Writing & Communication</a>
-        </div>
+        <!--Loads the navigation bar from nav.html-->
+        <nav id="nav">
+            
+        </nav>
+
+        <script>
+        $(function(){
+            $("#nav").load("nav.html");
+        });
+        </script>
+        <!--End navigation bar-->
 
         <div id="content">
             <div class="leftDisplay">

@@ -10,9 +10,9 @@ body {
     padding: 0px;
     margin-bottom: 100px;
   }
-  
-/**Navigation bar*/
-#nav{
+
+
+nav{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -20,7 +20,7 @@ body {
     background-image: linear-gradient(to right, teal, turquoise);
 }
 
-#nav a{
+nav a{
     display: block;
     padding: 25px 20px 25px 20px;
     border: 5px;
@@ -32,7 +32,7 @@ body {
     text-transform: uppercase;
 }
 
-#nav a:hover{
+nav a:hover{
     color: #FFB000;
 }
 
