@@ -48,6 +48,7 @@ body {
     margin: 50px;
     margin-top: 0;
     padding: 0;
+    padding-bottom: 50px;
     background-color: rgba(127, 200, 239, 0.6);
     font-size: 20px;
 }
