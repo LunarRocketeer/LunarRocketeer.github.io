@@ -49,25 +49,36 @@ nav a:hover{
     margin-top: 0;
     padding: 0;
     background-color: rgba(127, 200, 239, 0.6);
+    font-size: 20px;
 }
 
 /**All content follows a few basic rules.*/
 #content div{
-    padding-top: 25px;
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+hr{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5px;
+    background-color: white;
 }
 
 /**Displays a large image on the left with title and description on the right.*/
 .leftDisplay{
     display: grid;
-    grid-auto-rows: 1fr 1fr 1fr;
+    grid-auto-rows: auto auto auto;
     grid-auto-columns: 66% 33%; 
 }
 
 /**Displays a large image on the right with title and description on teh left.*/
 .rightDisplay{
     display: grid;
-    grid-auto-rows: 1fr 1fr 1fr;
+    grid-auto-rows: auto auto auto;
     grid-auto-columns: 33% 66%;
 }
 
@@ -106,10 +117,21 @@ h2{
     grid-row: 1 / span 3;
 }
 
-.rightDisplay h3{
+#leftShowcase{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+    justify-self: stretch;
+    align-self: center;
+    width: 60%;
+    height: 100%;
+}
+
+#rightShowcase{
     grid-column: 2 / span 2;
     grid-row: 1 / span 3;
-} 
+    justify-self: stretch;
+    align-self: center;
+}
 
 p{
     font-family: sans-serif;
