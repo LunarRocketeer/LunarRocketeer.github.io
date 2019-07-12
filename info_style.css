@@ -69,13 +69,13 @@ hr{
     display: flex;
     margin-bottom: 50px;
     flex-direction: row-reverse;
-    text-align: right;
 }
 
 /**Displays a large image on the right with title and description on the left.*/
 .rightDisplay{
     display: flex;
     margin-bottom: 50px;
+    text-align: right;
 }
 
 /**Puts the three info types into a "paragraph"**/
