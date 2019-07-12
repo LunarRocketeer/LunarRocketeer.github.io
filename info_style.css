@@ -48,7 +48,7 @@ body {
     margin: 50px;
     margin-top: 0;
     padding: 0;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     background-color: rgba(127, 200, 239, 0.6);
     font-size: 20px;
 }
@@ -83,9 +83,9 @@ hr{
 
 .info{
     display: grid;
-    grid-auto-rows: auto auto auto;
-    grid-auto-columns: auto;
     width: 33%;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto auto auto;
 }
 
 h1{
