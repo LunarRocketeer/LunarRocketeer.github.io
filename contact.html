@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cameron Miller - contact-info</title>
+    <link rel="stylesheet" type="text/css" href="info_style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <a href="index.html">Home</a>
+        <a href="film_info.html">Filmmaking & Video Editing</a>
+        <a href="design_info.html">Drawing & Design</a>
+        <a href="dev_info.html">Programming & Development</a>
+        <a href="geo_info.html">Geography, Planning, Data</a>
+        <a href="writing_info.html">Writing & Communication</a>
+    </div>
+    <div id="content">
+        <div class="rightDisplay">
+            <div class="info">
+                <h1>Email</h1>
+                <p><a href="mailto: cameron.sidney.miller@gmail.com">cameron.sidney.miller@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="leftDisplay">
+            <div class="info">
+                <h1>Github</h1>
+                <p>Github Calendar plugin provided by <a href="https://github.com/IonicaBizau/github-calendars">Ionica
+                        Bizau</a>.
+                </p>
+            </div>
+            <!--Github calendar script from https://ionicabizau.github.io/github-calendar/example/-->
+
+            <!--Loads Library-->
+            <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+            <!--Loads CSS-->
+            <link rel="stylesheet"
+                href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+            <!--Makes space for calendar-->
+            <div class="leftShowcase calendar">
+
+            </div>
+            <script>
+                GitHubCalendar(".calendar", "LunarRocketeer");
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

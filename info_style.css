@@ -9,7 +9,6 @@ body {
     background-repeat: no-repeat;
 }
 
-
 /**Navigation bar*/
 
 #nav {
@@ -35,7 +34,6 @@ body {
     color: #FFB000;
 }
 
-
 /**Marks the page the user is currently on.*/
 
 #current {
@@ -56,6 +54,22 @@ body {
     max-height: 100%;
 }
 
+/**Color boxes for fav color page**/
+
+#colors {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 50% 50%;
+}
+
+.blueBox {
+    background-color: #00aeff;
+}
+
+.orangeBox{
+    background-color: rgb(255, 166, 0);
+}
 
 /**White line seperating blurb and projects**/
 
@@ -69,7 +83,6 @@ hr {
     margin-bottom: 50px;
 }
 
-
 /**Displays a large image on the left with title and description on the right.  Text is right aligned.*/
 
 .leftDisplay {
@@ -78,7 +91,6 @@ hr {
     flex-direction: row-reverse;
 }
 
-
 /**Displays a large image on the right with title and description on the left.*/
 
 .rightDisplay {
@@ -86,7 +98,6 @@ hr {
     margin-bottom: 50px;
     text-align: right;
 }
-
 
 /**Puts the three info types into a "paragraph"**/
 
@@ -109,6 +120,19 @@ h2 {
     margin-bottom: 5px;
 }
 
+p {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    grid-row: 3 / span 1;
+}
+
+p a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
 .leftShowcase {
     margin-right: 50px;
     width: 66%;
@@ -123,7 +147,6 @@ h2 {
     align-self: flex-start;
     object-fit: contain;
 }
-
 
 /* Necessary wrapper for dynamic video sizing from: https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php 
 and https://benmarshall.me/resize-videos-proportionally-intrinsic-ratios/*/
@@ -149,13 +172,9 @@ and https://benmarshall.me/resize-videos-proportionally-intrinsic-ratios/*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
     justify-content: center;
 }
 
-p {
-    font-family: sans-serif;
-    padding: 0;
-    margin: 0;
-    grid-row: 3 / span 1;
+.calendar {
+    background-color: #004ac04f;
 }
