@@ -109,12 +109,12 @@ h2 {
     margin-bottom: 5px;
 }
 
-#leftShowcase {
+.leftShowcase {
     margin-right: 50px;
     width: 66%;
 }
 
-#rightShowcase {
+.rightShowcase {
     margin-left: 50px;
     width: 66%;
 }
@@ -149,7 +149,8 @@ and https://benmarshall.me/resize-videos-proportionally-intrinsic-ratios/*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+
+    justify-content: center;
 }
 
 p {
