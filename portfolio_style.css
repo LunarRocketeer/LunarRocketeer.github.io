@@ -39,7 +39,6 @@ header{
 }
 
 #nametag p{
-    font-family: sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -50,6 +49,8 @@ p a{
 }
 
 #hello{
+    font-family: 'Rubik', sans-serif;
+
     margin: 0;
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
@@ -60,7 +61,7 @@ p a{
 #name{
     font-size: 3em;
     color: #FFB000;
-    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
 
     grid-column: 1 / span 1;
     grid-row: 1 / span 3;
@@ -69,6 +70,7 @@ p a{
 }
 
 #sub{
+    font-family: 'Rubik', sans-serif;
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
     align-self: start;
@@ -105,21 +107,21 @@ header img{
     height: 25%;
 
     font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
     color: white;
     margin: 0;
     margin-top: 5px;
     padding: 0px;
-    font-family: sans-serif;
     vertical-align: middle;
 
     padding: 10px;
 }
 
 #clickS{
+    font-family: 'Rubik', sans-serif;
     text-align: center;
     background-color: rgba(127, 200, 239, 0.6);
     padding: 15px 0 15px 0;
-    font-family: sans-serif;
     color: #FFB000;
     font-size: 25px;
 }
