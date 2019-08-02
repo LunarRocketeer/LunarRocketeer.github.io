@@ -59,7 +59,7 @@ body {
     font-size: 20px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 90px;
+    padding-top: 110px;
     max-height: 100%;
 }
 
@@ -87,9 +87,10 @@ hr {
     margin-left: auto;
     margin-right: auto;
     height: 5px;
-    background-color: white;
+    background-color: #002054;
     margin-top: 25px;
     margin-bottom: 35px;
+    border: 0px;
 }
 
 /**Displays a large image on the left with title and description on the right.  Text is right aligned.*/
@@ -121,6 +122,43 @@ h1 {
     font-size: 40px;
     margin-bottom: 0px;
     margin-top: 0px;
+    position: relative;
+    z-index: 100;
+    color: white;
+}
+
+.info h1:before{
+    content:"";
+    background-image: linear-gradient(to right, teal, turquoise);
+    position: absolute;
+    height: 105%;
+    width: 200vw;
+    z-index: -1;
+}
+
+.info h2::before{
+    content:"";
+    background-image: linear-gradient(to right, teal, turquoise);
+    position: absolute;
+    height: 105%;
+    width: 200vw;
+    z-index: -1;
+}
+
+.rightDisplay h1:before{
+    left:-305vh;
+}
+
+.rightDisplay h2:before{
+    left:-305vh;
+}
+
+.leftDisplay h1:before{
+    right:-305vh;
+}
+
+.leftDisplay h2::before{
+    right:-305vh;
 }
 
 h2 {
@@ -128,6 +166,8 @@ h2 {
     margin-top: 0px;
     margin-bottom: 20px;
     color: #002054;
+    position: relative;
+    z-index: 100;
 }
 
 p {
@@ -135,6 +175,7 @@ p {
     padding: 0;
     margin: 0;
     grid-row: 3 / span 1;
+    color: white;
 }
 
 p a {
