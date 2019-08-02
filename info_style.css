@@ -31,20 +31,6 @@ body {
     text-transform: uppercase;
 }
 
-@media only screen and (min-width: 1000px){
-    #nav{
-        flex-direction: row;
-        position: fixed;
-    }
-    #nav a{
-        font-size: .65em;
-    }
-
-    #teams{
-        margin-left: 10vh;
-    }
-}
-
 #contact{
     background-color: #ff5151b2;
     font-weight: bold;
@@ -57,9 +43,24 @@ body {
 
 /**Marks the page the user is currently on.*/
 
-#current {
+#current, #current_teams {
     font-weight: bold;
     background-image: linear-gradient(to right, rgb(119, 2, 119), rgb(170, 6, 170));
+}
+
+
+@media only screen and (min-width: 1000px){
+    #nav{
+        flex-direction: row;
+        position: fixed;
+    }
+    #nav a{
+        font-size: .65em;
+    }
+
+    #teams, #current_teams{
+        margin-left: 10vh;
+    }
 }
 
 #content {
@@ -144,41 +145,23 @@ h1 {
     color: white;
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 2001px){
-    .info h1:before{
-        content:"";
-        background-image: linear-gradient(to right, teal, turquoise);
-        position: absolute;
-        height: 105%;
-        width: 200vw;
-        z-index: -1;
+.info h1:before, .info h2:before{
+    content:"";
+    background-image: linear-gradient(to right, teal, turquoise);
+    position: absolute;
+    height: 105%;
+    z-index: -1;
     }
 
-    .info h2::before{
-        content:"";
-        background-image: linear-gradient(to right, teal, turquoise);
-        position: absolute;
-        height: 105%;
-        width: 200vw;
-        z-index: -1;
-    }
-
-    .rightDisplay h1:before{
-        left:-170vw;
+.rightDisplay h1:before, .rightDisplay h2:before{
+    left:-170vw;
+    width: 200vw;
     }
     
-    .rightDisplay h2:before{
-        left:-170vw;
+.leftDisplay h1:before, .leftDisplay h2:before{
+    left: -2vw;
+    width: 36.1vw;
     }
-    
-    .leftDisplay h1:before{
-        right:-170vw;
-    }
-    
-    .leftDisplay h2::before{
-        right:-170vw;
-    }
-}
 
 h2 {
     font-family: 'Rubik', sans-serif;
