@@ -49,7 +49,7 @@ body {
 }
 
 
-@media only screen and (min-width: 1000px){
+@media screen and (min-width: 1000px){
     #nav{
         flex-direction: row;
         position: fixed;
@@ -76,7 +76,7 @@ body {
     max-height: 100%;
 }
 
-@media only screen and (min-width: 1250px){
+@media screen and (min-width: 1250px){
     #content{
         padding-top: 10vh;
     }
@@ -114,27 +114,53 @@ hr {
 
 /**Displays a large image on the left with title and description on the right.  Text is right aligned.*/
 
-.leftDisplay {
+.leftDisplay{
     display: flex;
-    margin-bottom: 50px;
     flex-direction: row-reverse;
+    text-align: left;
+    margin-bottom: 50px;
 }
 
 /**Displays a large image on the right with title and description on the left.*/
 
-.rightDisplay {
+.rightDisplay{
     display: flex;
-    margin-bottom: 50px;
+    flex-direction: row;
     text-align: right;
+    margin-bottom: 50px;
 }
 
-/**Puts the three info types into a "paragraph"**/
+/** Makes content into one column instead of two on mobile**/
+@media screen and (max-width: 1000px){
+    .leftDisplay {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
 
+    .rightDisplay {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+/**Puts the three info types (title, subtitle, description) into a "paragraph"**/
 .info {
     display: flex;
-    width: 33%;
     flex-direction: column;
+    /** Centers content for one column**/
+    justify-content: center;
 }
+
+/** Sets up 2-column layout on Desktop.**/
+@media screen and (min-width: 1000px){
+    .info{
+        justify-content: flex-start;
+        width: 33%;
+    }
+}
+
 
 h1 {
     font-family: 'Rubik', sans-serif;
@@ -145,23 +171,40 @@ h1 {
     color: white;
 }
 
+/** Title banners**/
 .info h1:before, .info h2:before{
     content:"";
     background-image: linear-gradient(to right, teal, turquoise);
     position: absolute;
     height: 105%;
     z-index: -1;
-    }
+}
 
-.rightDisplay h1:before, .rightDisplay h2:before{
-    left:-170vw;
-    width: 200vw;
-    }
-    
 .leftDisplay h1:before, .leftDisplay h2:before{
-    left: -2vw;
-    width: 36.1vw;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    width: 100%;
+}
+.rightDisplay h1:before, .rightDisplay h2:before{
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    width: 100%;
+}
+
+@media screen and (min-width: 1000px){
+    .rightDisplay h1:before, .rightDisplay h2:before{
+        left:-170vw;
+        width: 200vw;
     }
+        
+    .leftDisplay h1:before, .leftDisplay h2:before{
+        /** left --> puts margin on left side of title**/
+        left: -2vw;
+        width: 36.1vw;
+    }
+}
 
 h2 {
     font-family: 'Rubik', sans-serif;
@@ -186,14 +229,17 @@ p a {
     font-weight: bold;
 }
 
-.leftShowcase {
-    margin-right: 50px;
-    width: 66%;
-}
+/** Sets up 2-column layout on Desktop**/
+@media screen and (min-width: 1000px){
+    .leftShowcase {
+        margin-right: 50px;
+        width: 66%;
+    }
 
-.rightShowcase {
-    margin-left: 50px;
-    width: 66%;
+    .rightShowcase {
+        margin-left: 50px;
+        width: 66%;
+    }
 }
 
 .thumbnail {
@@ -226,14 +272,6 @@ and https://benmarshall.me/resize-videos-proportionally-intrinsic-ratios/*/
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-#left{
-    justify-content: left;
-}
-
-#right{
-    justify-content: right;
 }
 
 .calendar {
